@@ -1,0 +1,7 @@
+<unk> 0
+<pad> 1
+<bos> 2
+O 3
+LOC 4
+PER 5
+ORG 6
