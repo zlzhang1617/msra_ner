@@ -146,7 +146,7 @@ class Segment_words:
                     f.write('\n')
 
 if __name__ == '__main__':
-    s = Segment_words('MSRA/msra_train_bio','MSRA/msra_test_bio')
+    s = Segment_words('../MSRA/msra_train_bio', 'MSRA/msra_test_bio')
     ner_dic = s.recognize_NER()
     a = s.segment_to_words(ner_dic)
-    s.save_segment_words(seg_sents=a,words_file='words.txt')
+    s.save_segment_words(seg_sents=a, words_file='words.txt')

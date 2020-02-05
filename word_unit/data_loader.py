@@ -49,13 +49,13 @@ class DataLoader:
     def save_vocab(self):
         word2idx = self.TEXT.vocab.stoi
         label2idx = self.LABEL.vocab.stoi
-        with open('word2idx.txt','w',encoding='utf-8') as f:
+        with open('word2idx.txt', 'w', encoding='utf-8') as f:
             for i in word2idx:
                 f.write(str(i))
                 f.write(' ')
                 f.write(str(word2idx[i]))
                 f.write('\n')
-        with open('label2idx.txt','w',encoding='utf-8') as f:
+        with open('label2idx.txt', 'w', encoding='utf-8') as f:
             for i in label2idx:
                 f.write(str(i))
                 f.write(' ')

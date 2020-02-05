@@ -1,4 +1,3 @@
-import operator
 import model_training as m
 from segment_words import Segment_words
 
@@ -8,12 +7,12 @@ m_t = m.Model_training(epochs=m.EPOCHS,max_length=m.MAX_LENGTH,hidden_dim=m.HIDD
 # y = m_t.max_label_probability(x)
 # y_= m_t.generate_ner_tag(y)
 
-s = Segment_words('./MSRA/msra_train_bio','./MSRA/msra_test_bio')
+s = Segment_words('../MSRA/msra_train_bio', './MSRA/msra_test_bio')
 s.sents = s.test_sents
 ner_dic = s.recognize_NER()
 seg_sents = s.segment_to_words(ner_dic)
 
-with open('precision_result.txt','r',encoding='utf-8') as f:
+with open('precision_result.txt', 'r', encoding='utf-8') as f:
     line = f.readline()
     labels = []
     precisions = []

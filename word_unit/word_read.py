@@ -1,6 +1,3 @@
-import torch
-import torch.nn as nn
-
 class Word_read():
     def __init__(self,word_file):
         self.word_file = word_file
