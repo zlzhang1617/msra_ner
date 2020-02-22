@@ -2,6 +2,9 @@
 <pad> 1
 <bos> 2
 O 3
-LOC 4
-PER 5
-ORG 6
+I-ORG 4
+I-LOC 5
+B-LOC 6
+I-PER 7
+B-ORG 8
+B-PER 9
